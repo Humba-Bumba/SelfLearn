@@ -1,6 +1,6 @@
 {
   "name": "selflearn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Тестовый проект",
   "main": "index.js",
   "scripts": {
