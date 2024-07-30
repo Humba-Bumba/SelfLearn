@@ -1,3 +1,12 @@
+## [1.0.4](https://github.com/Humba-Bumba/SelfLearn/compare/v1.0.3...v1.0.4) (2024-07-30)
+
+
+### Bug Fixes
+
+* ultra release file ([b6bd097](https://github.com/Humba-Bumba/SelfLearn/commit/b6bd097f749d39ef75879c3da8c4e81e8e5eb879))
+
+
+
 ## [1.0.3](https://github.com/Humba-Bumba/SelfLearn/compare/v1.0.2...v1.0.3) (2024-07-30)
 
 
