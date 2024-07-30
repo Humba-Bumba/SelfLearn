@@ -11,11 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: conventional Changelog Action
-        id: changelog
-        uses: TriPSs/conventional-changelog-action@v5
-        with:
-          github-token: ${{ secrets.CHANGELOG_RELEASE }}
+#      - name: conventional Changelog Action
+#        id: changelog
+#        uses: TriPSs/conventional-changelog-action@v5
+#        with:
+#          github-token: ${{ secrets.CHANGELOG_RELEASE }}
 
       - name: create release
         uses: softprops/action-gh-release@v2
