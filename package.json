@@ -1,0 +1,19 @@
+{
+  "name": "selflearn",
+  "version": "1.0.0",
+  "description": "Тестовый проект",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Humba-Bumba/SelfLearn.git"
+  },
+  "author": "Humba-Bumba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Humba-Bumba/SelfLearn/issues"
+  },
+  "homepage": "https://github.com/Humba-Bumba/SelfLearn#readme"
+}
