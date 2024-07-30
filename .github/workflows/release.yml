@@ -12,14 +12,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Set up Git user
+        run: |
+          git config user.name "Conventional Changelog Action"
+          git config user.email "conventional.changelog.action@github.com"
+
       - name: Run Conventional Changelog Action
         uses: TriPSs/conventional-changelog-action@v5
         with:
-          git-message: 'chore(release): {version}'
+          git-message: 'chore(release): {version} [skip ci]'
           git-user-name: 'Conventional Changelog Action'
           git-user-email: 'conventional.changelog.action@github.com'
           git-pull-method: '--ff-only'
-          git-push: true
+          git-push: false
           git-branch: 'refs/heads/main'
           preset: 'angular'
           tag-prefix: 'v'
@@ -38,3 +43,11 @@ jobs:
           pre-release: false
           pre-release-identifier: 'rc'
           skip-bump: false
+          github-token: ${{ secrets.GH_PAT }}
+
+      - name: Push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+          git push origin main --follow-tags
