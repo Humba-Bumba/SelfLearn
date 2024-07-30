@@ -23,7 +23,7 @@ jobs:
       - name: Run Conventional Changelog Action
         uses: TriPSs/conventional-changelog-action@v5
         with:
-          git-message: 'chore(release): {version}'
+          git-message: 'release: {version}'
           git-user-name: ${{ github.actor }}
           git-user-email: ${{ github.actor }}@users.noreply.github.com
           git-pull-method: '--ff-only'
