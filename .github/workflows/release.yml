@@ -41,7 +41,7 @@ jobs:
           skip-commit: false
           skip-tag: false
           git-url: 'github.com'
-          skip-ci: true
+          skip-ci: false
           create-summary: false
           pre-release: false
           pre-release-identifier: 'rc'
